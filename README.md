@@ -9,4 +9,4 @@ Pau
 
 
 # Authors
-Víctor Suarez Vara - Coder
+Víctor Suarez Vara - Coder and teacher
