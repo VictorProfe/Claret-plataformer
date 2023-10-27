@@ -9,4 +9,4 @@ Pau
 
 
 # Authors
-Bruna Rostoll Tudel - Coder
+Bruna Rostoll Tudel - Coder and student
