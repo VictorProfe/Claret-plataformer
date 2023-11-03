@@ -27,7 +27,7 @@ text = "Nivell 2"
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
-text = "Sortir"
+text = "Get out"
 
 [connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Lvl2" to="." method="_on_lvl2_button_pressed"]
