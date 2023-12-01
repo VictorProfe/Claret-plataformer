@@ -15,9 +15,9 @@ texture = ExtResource("1_kis4d")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HazardArea"]
 position = Vector2(9, 0)
 rotation = -1.5708
-polygon = PackedVector2Array(0, 0, 3, -6, 4, -6, 7, 0)
+polygon = PackedVector2Array(0, 0, 3.00003, -6.99999, 4.00003, -6.99999, 7, 0)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="HazardArea"]
 position = Vector2(9, -8)
 rotation = -1.5708
-polygon = PackedVector2Array(0, 0, 3, -6, 4, -6, 7, 0)
+polygon = PackedVector2Array(0, 0, 3.00002, -6.99999, 4.00002, -6.99999, 7, 0)
