@@ -13,7 +13,7 @@ func _on_start_game_button_pressed():
 	
 func _on_lvl2_button_pressed():
 	await LevelTransition.fade_to_black()
-	get_tree().change_scene_to_file("res://Nivells/Nivell 2/level_two.tscn")
+	get_tree().change_scene_to_file("res://Nivells/Nivell 3/Level 3.tscn")
 	LevelTransition.fade_from_black()
 	
 func _on_quit_button_pressed():
