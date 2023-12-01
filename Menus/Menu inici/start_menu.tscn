@@ -17,17 +17,19 @@ layout_mode = 2
 unique_name_in_owner = true
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
-text = "Iniciar joc"
+text = "Start
+"
 
 [node name="Lvl2" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
-text = "Nivell 2"
+text = "Lvl 2"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
-text = "Sortir"
+text = "Exit
+"
 
 [connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Lvl2" to="." method="_on_lvl2_button_pressed"]
