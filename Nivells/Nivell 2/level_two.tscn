@@ -1,11 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2jh5urlv1mvv"]
 
 [ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://World/world.tscn" id="1_kl5rc"]
-[ext_resource type="PackedScene" uid="uid://6jsoqvcs8feb" path="res://Objectes/spines/spikes.tscn" id="2_ooqc7"]
-[ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://assets/heart.tscn" id="3_mjyj3"]
-[ext_resource type="Script" path="res://Objectes/cor/heart.gd" id="4_mbpqb"]
+[ext_resource type="PackedScene" uid="uid://c5bhvnov88a2c" path="res://Nivells/Nivell 3/level_three.tscn" id="2_bhxnc"]
+[ext_resource type="PackedScene" uid="uid://6jsoqvcs8feb" path="res://spikes.tscn" id="2_ooqc7"]
+[ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objectes/cor/heart.tscn" id="3_mjyj3"]
 
 [node name="LevelTwo" instance=ExtResource("1_kl5rc")]
+next_level = ExtResource("2_bhxnc")
 
 [node name="Player" parent="." index="0"]
 position = Vector2(32, 128)
@@ -24,35 +25,27 @@ position = Vector2(160, 176)
 
 [node name="Heart" parent="." index="6" instance=ExtResource("3_mjyj3")]
 position = Vector2(40, 48)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart2" parent="." index="7" instance=ExtResource("3_mjyj3")]
 position = Vector2(280, 96)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart3" parent="." index="8" instance=ExtResource("3_mjyj3")]
 position = Vector2(224, 48)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart4" parent="." index="9" instance=ExtResource("3_mjyj3")]
 position = Vector2(248, 24)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart5" parent="." index="10" instance=ExtResource("3_mjyj3")]
 position = Vector2(272, 48)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart6" parent="." index="11" instance=ExtResource("3_mjyj3")]
 position = Vector2(368, 56)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart7" parent="." index="12" instance=ExtResource("3_mjyj3")]
 position = Vector2(416, 56)
-script = ExtResource("4_mbpqb")
 
 [node name="Heart8" parent="." index="13" instance=ExtResource("3_mjyj3")]
 position = Vector2(488, 0)
-script = ExtResource("4_mbpqb")
 
 [node name="Spikes4" parent="." index="14" instance=ExtResource("2_ooqc7")]
 position = Vector2(112, 176)

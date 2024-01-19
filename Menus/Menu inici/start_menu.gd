@@ -18,3 +18,8 @@ func _on_lvl2_button_pressed():
 	
 func _on_quit_button_pressed():
 	get_tree().quit()
+
+func _on_lvl3_button_pressed():
+	await LevelTransition.fade_to_black()
+	get_tree().change_scene_to_file("res://Nivells/Nivell 3/level_three.tscn")
+	LevelTransition.fade_from_black()
