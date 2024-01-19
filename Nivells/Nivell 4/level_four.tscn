@@ -1,0 +1,111 @@
+[gd_scene load_steps=10 format=3 uid="uid://bhgr5sbljhbjs"]
+
+[ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://World/world.tscn" id="1_uffu7"]
+[ext_resource type="PackedScene" uid="uid://dnfocapm3or1d" path="res://Nivells/Nivell 5/level_five.tscn" id="2_w6qyj"]
+[ext_resource type="PackedScene" uid="uid://6jsoqvcs8feb" path="res://spikes.tscn" id="3_t1wc6"]
+[ext_resource type="PackedScene" uid="uid://qy2fgdkfsirp" path="res://Objectes/obstacleRandom/obstacleRandom.tscn" id="6_onve7"]
+[ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objectes/cor/heart.tscn" id="7_2ei3v"]
+[ext_resource type="PackedScene" uid="uid://c3yx4pko1k3it" path="res://Objectes/spikes girats/spikesGirats.tscn" id="8_8tnxb"]
+[ext_resource type="PackedScene" uid="uid://bx8enf5ix4chl" path="res://Nivells/level_tile_map.tscn" id="8_h1pln"]
+[ext_resource type="PackedScene" uid="uid://cuvapvl382rpk" path="res://Objectes/final mapa/finalMapa.tscn" id="9_auyjh"]
+
+[sub_resource type="GDScript" id="GDScript_djbib"]
+script/source = "extends Area2D
+
+func _on_body_entered(body):
+	queue_free()
+	var hearts = get_tree().get_nodes_in_group(\"Hearts\")
+	if hearts.size() == 1:
+		Events.level_completed.emit()
+"
+
+[node name="LevelOne" instance=ExtResource("1_uffu7")]
+position = Vector2(0, 16)
+next_level = ExtResource("2_w6qyj")
+
+[node name="Player" parent="." index="0"]
+position = Vector2(90, -86)
+
+[node name="CenterContainer" parent="CanvasLayer" index="2"]
+offset_left = -1.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 10.0
+
+[node name="LevelTileMap" parent="." index="2"]
+position = Vector2(0, -7)
+
+[node name="Spikes4" parent="." index="3" instance=ExtResource("3_t1wc6")]
+position = Vector2(232, 191)
+
+[node name="Spikes7" parent="." index="4" instance=ExtResource("3_t1wc6")]
+position = Vector2(232, 191)
+
+[node name="Spikes5" parent="." index="5" instance=ExtResource("3_t1wc6")]
+position = Vector2(-39, 144)
+
+[node name="Spikes5" parent="Spikes5" index="2" instance=ExtResource("3_t1wc6")]
+position = Vector2(-96, -32)
+
+[node name="Spikes6" parent="." index="6" instance=ExtResource("3_t1wc6")]
+position = Vector2(-39, 144)
+
+[node name="Spikes5" parent="Spikes6" index="2" instance=ExtResource("3_t1wc6")]
+position = Vector2(-16, 0)
+
+[node name="Heart" parent="." index="7" instance=ExtResource("7_2ei3v")]
+position = Vector2(-112, -394)
+script = SubResource("GDScript_djbib")
+
+[node name="Heart5" parent="." index="8" instance=ExtResource("7_2ei3v")]
+position = Vector2(224, 176)
+script = SubResource("GDScript_djbib")
+
+[node name="Heart2" parent="." index="9" instance=ExtResource("7_2ei3v")]
+position = Vector2(-94, 207)
+script = SubResource("GDScript_djbib")
+
+[node name="Heart3" parent="." index="10" instance=ExtResource("7_2ei3v")]
+position = Vector2(178, -429)
+script = SubResource("GDScript_djbib")
+
+[node name="obstacleRandom" parent="." index="11" instance=ExtResource("6_onve7")]
+position = Vector2(159, -175)
+
+[node name="obstacleRandom" parent="obstacleRandom" index="2" instance=ExtResource("6_onve7")]
+position = Vector2(35, -53)
+
+[node name="obstacleRandom" parent="obstacleRandom/obstacleRandom" index="2" instance=ExtResource("6_onve7")]
+position = Vector2(-36, -47)
+
+[node name="obstacleRandom" parent="obstacleRandom/obstacleRandom/obstacleRandom" index="2" instance=ExtResource("6_onve7")]
+position = Vector2(36, -47)
+
+[node name="obstacleRandom" parent="obstacleRandom/obstacleRandom/obstacleRandom/obstacleRandom" index="2" instance=ExtResource("6_onve7")]
+position = Vector2(-35, -49)
+
+[node name="LevelTileMap2" parent="." index="12" instance=ExtResource("8_h1pln")]
+position = Vector2(-24, 304)
+layer_0/tile_data = PackedInt32Array(-65535, 0, 0, 1, 0, 1, 65537, 0, 2, -65534, 65536, 0, 2, 65536, 1, 65538, 65536, 2, -65533, 65536, 0, 3, 65536, 1, 65539, 65536, 2, -65532, 65536, 0, 4, 65536, 1, 65540, 65536, 2, -65531, 65536, 0, 5, 65536, 1, 65541, 65536, 2, -65530, 131072, 0, 6, 131072, 1, 65542, 131072, 2, -1572860, 65536, 0, -1507324, 65536, 1, -1441788, 65536, 2, -1572861, 0, 0, -1507325, 0, 1, -1441789, 0, 2, -1572859, 65536, 0, -1507323, 65536, 1, -1441787, 65536, 2, -1572858, 65536, 0, -1507322, 65536, 1, -1441786, 65536, 2, -1572857, 65536, 0, -1507321, 65536, 1, -1441785, 65536, 2, -1572856, 65536, 0, -1507320, 65536, 1, -1441784, 65536, 2, -1572855, 65536, 0, -1507319, 65536, 1, -1441783, 65536, 2, -1572854, 131072, 0, -1507318, 131072, 1, -1441782, 131072, 2, -1376260, 196608, 0, -1310724, 196608, 1, -1245188, 196608, 1, -1441792, 196608, 0, -1376256, 196608, 1, -1310720, 196608, 1, -1245184, 196608, 1, -1179648, 196608, 1, -1114112, 196608, 1, -1048576, 196608, 1, -983040, 196608, 1, -917504, 196608, 1, -851968, 196608, 1, -786432, 196608, 1, -1179652, 196608, 1, -1114116, 196608, 1, -1048580, 196608, 1, -983044, 196608, 1, -917508, 196608, 1, -851972, 196608, 2, -720903, 196608, 0, -655367, 196608, 1, -589827, 0, 0, -524291, 196608, 1, -720896, 196608, 1, -589826, 65536, 3, -589825, 65536, 3, -655360, 131072, 2, -327687, 196608, 1, -262151, 0, 2, -393223, 196608, 1, -458759, 196608, 1, -524295, 196608, 1, -589831, 196608, 1, -458755, 196608, 1, -393219, 196608, 1, -327683, 196608, 1, -262147, 131072, 2, -1376243, 0, 3, -1376242, 65536, 3, -1376241, 131072, 3, -1245166, 0, 3, -1245165, 65536, 3, -1245164, 131072, 3, -1048563, 0, 3, -1048562, 65536, 3, -1048561, 131072, 3, -786414, 0, 3, -786413, 65536, 3, -786412, 131072, 3, -458738, 0, 3, -458737, 65536, 3, -458736, 131072, 3, -1835010, 196608, 3, -1966086, 196608, 3, -2097162, 196608, 3, -2359302, 196608, 3, -2555914, 196608, 3, -2752518, 196608, 3, -1966066, 196608, 1, -3080178, 196608, 0, -3014642, 196608, 1, -2949106, 196608, 1, -2883570, 196608, 1, -2818034, 196608, 1, -2752498, 196608, 1, -2686962, 196608, 1, -2621426, 196608, 1, -2555890, 196608, 1, -2490354, 196608, 1, -2424818, 196608, 1, -2359282, 196608, 1, -2293746, 196608, 1, -2228210, 196608, 1, -2162674, 196608, 1, -2097138, 196608, 1, -2031602, 196608, 1, -262150, 65536, 3, -262149, 65536, 3, -262148, 65536, 3, -1834994, 196608, 2, -1900530, 196608, 1, -1834998, 196608, 2, -3080182, 196608, 0, -1900534, 196608, 1, -1966070, 196608, 1, -2031606, 196608, 1, -2097142, 196608, 1, -2162678, 196608, 1, -2228214, 196608, 1, -2293750, 196608, 1, -2359286, 196608, 1, -2424822, 196608, 1, -2490358, 196608, 1, -2555894, 196608, 1, -2621430, 196608, 1, -2686966, 196608, 1, -2752502, 196608, 1, -2818038, 196608, 1, -2883574, 196608, 1, -2949110, 196608, 1, -3014646, 196608, 1)
+layer_1/tile_data = PackedInt32Array(458758, 262145, 0, 458757, 196609, 0, 458755, 393218, 0, 458766, 262145, 0, 458765, 196609, 0, 458759, 131072, 0, 524295, 131072, 1, 524294, 65536, 1, 524290, 65536, 1, 458754, 65536, 0, 524291, 327682, 0, 524293, 327681, 0, 524301, 327681, 0, 458767, 131072, 0, 524302, 65536, 1, 524303, 327680, 2)
+
+[node name="Final mapa" parent="." index="14" instance=ExtResource("9_auyjh")]
+position = Vector2(120, 266)
+scale = Vector2(0.959999, 1)
+
+[node name="Final mapa" parent="Final mapa" index="1" instance=ExtResource("9_auyjh")]
+position = Vector2(-544.792, -1)
+scale = Vector2(0.959999, 1)
+
+[node name="Node2D" type="StaticBody2D" parent="." index="15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" index="0"]
+
+[node name="Spikes girats" parent="." index="16" instance=ExtResource("8_8tnxb")]
+position = Vector2(-33, 7)
+
+[node name="Spikes girats" parent="Spikes girats" index="2" instance=ExtResource("8_8tnxb")]
+position = Vector2(0, 48)
+
+[node name="Spikes girats" parent="Spikes girats/Spikes girats" index="2" instance=ExtResource("8_8tnxb")]
+position = Vector2(0, 49)
