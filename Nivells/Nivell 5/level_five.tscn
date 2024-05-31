@@ -107,3 +107,11 @@ position = Vector2(282, -602)
 
 [node name="Heart7" parent="." index="19" instance=ExtResource("5_yoc1a")]
 position = Vector2(-1541, 667)
+
+[node name="Final mapa2" parent="." index="20" instance=ExtResource("6_ejvlk")]
+position = Vector2(-1776, 740)
+scale = Vector2(1.48, 1)
+
+[node name="Final mapa" parent="Final mapa2" index="1" instance=ExtResource("6_ejvlk")]
+position = Vector2(658.784, -264)
+scale = Vector2(1.48, 1)
