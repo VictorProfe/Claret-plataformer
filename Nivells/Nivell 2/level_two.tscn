@@ -23,6 +23,10 @@ position = Vector2(144, 176)
 [node name="Spikes3" parent="." index="5" instance=ExtResource("2_ooqc7")]
 position = Vector2(160, 176)
 
+[node name="Spikes3" parent="Spikes3" index="2" instance=ExtResource("2_ooqc7")]
+position = Vector2(97, -48)
+rotation = -1.56367
+
 [node name="Heart" parent="." index="6" instance=ExtResource("3_mjyj3")]
 position = Vector2(40, 48)
 

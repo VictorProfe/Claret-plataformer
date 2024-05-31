@@ -54,7 +54,16 @@ position = Vector2(446, 176)
 position = Vector2(427, 177)
 
 [node name="Spikes girats" parent="." index="12" instance=ExtResource("3_x1dmf")]
-position = Vector2(325, 89)
+position = Vector2(336, 91)
+rotation = -1.55728
+
+[node name="Spikes girats" parent="Spikes girats" index="2" instance=ExtResource("3_x1dmf")]
+position = Vector2(-6.31111, -170.93)
+rotation = -1.55728
+
+[node name="Spikes girats" parent="Spikes girats/Spikes girats" index="2" instance=ExtResource("3_x1dmf")]
+position = Vector2(-314.939, 6.51593)
+rotation = -1.55728
 
 [node name="Spikes4" parent="." index="13" instance=ExtResource("3_x1dmf")]
 position = Vector2(142, 176)
@@ -81,6 +90,10 @@ script = SubResource("GDScript_djbib")
 
 [node name="Final mapa" parent="." index="20" instance=ExtResource("6_ofp85")]
 position = Vector2(-112, 192)
+scale = Vector2(0.959999, 1)
+
+[node name="Final mapa" parent="Final mapa" index="1" instance=ExtResource("6_ofp85")]
+position = Vector2(573.959, 3)
 scale = Vector2(0.959999, 1)
 
 [node name="Node2D" type="StaticBody2D" parent="." index="21"]
