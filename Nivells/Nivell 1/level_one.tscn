@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://World/world.tscn" id="1_xl3g4"]
 [ext_resource type="PackedScene" uid="uid://c3yx4pko1k3it" path="res://Objectes/spikes girats/spikesGirats.tscn" id="2_b0bm5"]
-[ext_resource type="PackedScene" uid="uid://ciq2rdmi8rc5f" path="res://Objectes/spikes/spikes.tscn" id="3_x1dmf"]
+[ext_resource type="PackedScene" path="res://Objectes/spikes/spikes.tscn" id="3_x1dmf"]
 [ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objectes/cor/heart.tscn" id="5_oqxmd"]
 [ext_resource type="PackedScene" uid="uid://cuvapvl382rpk" path="res://Objectes/final mapa/finalMapa.tscn" id="6_ofp85"]
 [ext_resource type="PackedScene" uid="uid://bx8enf5ix4chl" path="res://Nivells/level_tile_map.tscn" id="7_1wxbq"]

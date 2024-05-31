@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://363jddlsmit2"
-path="res://.godot/imported/Cor blau.png-60bdc7abdac986b2062e033231547fa8.ctex"
+path="res://.godot/imported/Cor blau.png-78d4aa3048400f7175367d0322ce9c01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imatges/Cor blau.png"
-dest_files=["res://.godot/imported/Cor blau.png-60bdc7abdac986b2062e033231547fa8.ctex"]
+source_file="res://Objectes/Cor blau.png"
+dest_files=["res://.godot/imported/Cor blau.png-78d4aa3048400f7175367d0322ce9c01.ctex"]
 
 [params]
 
