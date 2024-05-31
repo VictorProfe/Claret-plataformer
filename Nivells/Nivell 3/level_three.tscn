@@ -46,15 +46,15 @@ position = Vector2(435, 27)
 rotation = 0.694932
 
 [node name="Spikes girats" parent="Spikes girats/Spikes girats" index="2" instance=ExtResource("4_v231u")]
-position = Vector2(580.147, -595.612)
+position = Vector2(586.292, -600.735)
 rotation = -2.28196
 
 [node name="Spikes girats" parent="Spikes girats/Spikes girats/Spikes girats" index="2" instance=ExtResource("4_v231u")]
-position = Vector2(1.44777, 34.0278)
+position = Vector2(-2.584, 35.9626)
 rotation = 0.0559222
 
 [node name="Spikes girats2" parent="Spikes girats/Spikes girats/Spikes girats" index="3" instance=ExtResource("4_v231u")]
-position = Vector2(37.7676, 14.6149)
+position = Vector2(29.7041, 18.4845)
 rotation = -0.0171618
 
 [node name="Spikes6" parent="." index="7" instance=ExtResource("5_womtk")]
