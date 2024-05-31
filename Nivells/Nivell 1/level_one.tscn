@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbfvgxurqdfku"]
+[gd_scene load_steps=8 format=3 uid="uid://bbfvgxurqdfku"]
 
 [ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://World/world.tscn" id="1_xl3g4"]
-[ext_resource type="PackedScene" uid="uid://b2jh5urlv1mvv" path="res://Nivells/Nivell 2/level_two.tscn" id="2_b0bm5"]
-[ext_resource type="PackedScene" uid="uid://6jsoqvcs8feb" path="res://spikes.tscn" id="3_x1dmf"]
-[ext_resource type="PackedScene" uid="uid://c3yx4pko1k3it" path="res://Objectes/spikes girats/spikesGirats.tscn" id="4_tmt0l"]
+[ext_resource type="PackedScene" uid="uid://c3yx4pko1k3it" path="res://Objectes/spikes girats/spikesGirats.tscn" id="2_b0bm5"]
+[ext_resource type="PackedScene" uid="uid://ciq2rdmi8rc5f" path="res://Objectes/spikes/spikes.tscn" id="3_x1dmf"]
 [ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objectes/cor/heart.tscn" id="5_oqxmd"]
 [ext_resource type="PackedScene" uid="uid://cuvapvl382rpk" path="res://Objectes/final mapa/finalMapa.tscn" id="6_ofp85"]
 [ext_resource type="PackedScene" uid="uid://bx8enf5ix4chl" path="res://Nivells/level_tile_map.tscn" id="7_1wxbq"]
@@ -54,7 +53,7 @@ position = Vector2(446, 176)
 [node name="Spikes10" parent="." index="11" instance=ExtResource("3_x1dmf")]
 position = Vector2(427, 177)
 
-[node name="Spikes girats" parent="." index="12" instance=ExtResource("4_tmt0l")]
+[node name="Spikes girats" parent="." index="12" instance=ExtResource("3_x1dmf")]
 position = Vector2(325, 89)
 
 [node name="Spikes4" parent="." index="13" instance=ExtResource("3_x1dmf")]

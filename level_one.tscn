@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dxev2igc1wpv5" path="res://World/world.tscn" id="1_76218"]
 [ext_resource type="PackedScene" uid="uid://b2jh5urlv1mvv" path="res://Nivells/Nivell 2/level_two.tscn" id="2_3pwt2"]
 [ext_resource type="PackedScene" uid="uid://b7ssnkt4brfcg" path="res://Objectes/cor/heart.tscn" id="3_uefpj"]
-[ext_resource type="PackedScene" uid="uid://ciq2rdmi8rc5f" path="res://Objectes/spikes/spikesNew.tscn" id="3_wjalg"]
+[ext_resource type="PackedScene" uid="uid://ciq2rdmi8rc5f" path="res://Objectes/spikes/spikes.tscn" id="3_wjalg"]
 [ext_resource type="PackedScene" uid="uid://bx8enf5ix4chl" path="res://Nivells/level_tile_map.tscn" id="4_w5pw2"]
 [ext_resource type="PackedScene" uid="uid://qy2fgdkfsirp" path="res://Objectes/obstacleRandom/obstacleRandom.tscn" id="6_qpxn4"]
 
